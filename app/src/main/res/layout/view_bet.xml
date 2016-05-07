@@ -1,0 +1,72 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/betCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="40dp"
+    android:layout_marginBottom="25dp"
+    card_view:cardBackgroundColor="#101010"
+    card_view:cardCornerRadius="1dp">
+
+    <LinearLayout
+        android:id="@+id/betLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/betTitle"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bet Title"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/lightgreen"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:gravity="center">
+            <Button
+                android:id="@+id/betOptionA"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Option A"
+                android:background="?attr/selectableItemBackground"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/lightblue"
+                android:layout_weight="1"
+                android:gravity="center">
+            <Button
+                android:id="@+id/betOptionB"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Option B"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

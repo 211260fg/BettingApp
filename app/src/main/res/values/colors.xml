@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="twitter">#99bbff</color> <!-- blauw  -->
+    <color name="waze_roadclosed">#bfff80</color> <!-- groen  -->
+    <color name="waze_weatherhazard">#ffff66</color> <!-- geel  -->
+    <color name="waze_accident">#ff5c33</color> <!-- rood  -->
+    <color name="waze_jam">#ffc34d</color> <!-- oranje-geel  -->
+    <color name="waze_notype">#a6a6a6</color> <!-- grijs  -->
+    <color name="other">#d6d6c2</color> <!-- lichtgrijs  -->
+
+
+    <color name="gray">#4b4b4b</color> <!-- grijs  -->
+    <color name="darkGray">#282828</color> <!-- donkergrijs  -->
+    <color name="lightGray">#e2e2e2</color> <!-- donkergrijs  -->
+
+
+    <color name="lightblue">#D6E9FF</color> <!-- donkergrijs  -->
+    <color name="lightgreen">#E1FFA3</color> <!-- donkergrijs  -->
+
+
+</resources>

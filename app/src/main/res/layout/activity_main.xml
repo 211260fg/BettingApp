@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkGray"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Newest"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <Spinner
+                android:id="@+id/sortSpinner"
+                android:layout_width="20dp"
+                android:layout_height="16dp"
+                android:background="@android:drawable/ic_menu_more"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter" />
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/betRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:clipToPadding="false"
+            android:layout_margin="60dp"
+            android:padding="20dp" />
+
+    </LinearLayout>
+
+
+    <com.wunderlist.slidinglayer.SlidingLayer xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/slider"
+        android:layout_width="400dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/sliderLayout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/lightGray">
+
+            <TextView
+                style="@style/filterTitle"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp"
+                android:text="Categories" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/categoryRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:clipToPadding="false" />
+
+        </LinearLayout>
+
+    </com.wunderlist.slidinglayer.SlidingLayer>
+
+</RelativeLayout>
